@@ -4,31 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookChooser</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" class="logo"></a>
-            <h1>BookChooser</h1>
+            <div class="hamburguer-menu">
+                <input type="checkbox"class="checkbox-menu" id="checkbox-menu">
+                <label for="checkbox-menu" class="hamburguer-menu-icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </label>
+            </div>
 
-            <ul>
+            <a href="#" class="logo">
+                <h1>bookchooser</h1>
+            </a>
+
+            <ul id="nav-ul">
                 <li class="nav-item">
-                    <a href="#">Home</a>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Book of the month</a>
+                    <a href="#" class="nav-link">Book of the month</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Comments of the month</a>
+                    <a href="#" class="nav-link">Comments of the month</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Contact us</a>
+                    <a href="#" class="nav-link">Contact us</a>
                 </li>
             </ul>
+
+            <div class="theme-switch">
+                <input type="checkbox" class="theme-switch-checkbox" id="checkbox">
+                <label for="checkbox" class="switcher-label">
+                    <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+                    <ion-icon name="moon-outline" class="moon"></ion-icon>
+                    <div class="switcher"></div>
+                </label>
+            </div>
         </nav>
     </header>
+
+    <script src="./assets/js/index.js"></script>
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
 
-Criar um web app que escolha, aleatoriamente, o livro do mês, individualmente e tenha um espaço para que a pessoa salve o comentário por livro e por mês.
+<!-- Criar um web app que escolha, aleatoriamente, o livro do mês, individualmente e tenha um espaço para que a pessoa salve o comentário por livro e por mês. -->
