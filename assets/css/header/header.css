@@ -18,6 +18,7 @@ nav{
     align-items: center;
     padding: 4vw;
     justify-content: space-around;
+    z-index: 1;
 }
 
 ul{
