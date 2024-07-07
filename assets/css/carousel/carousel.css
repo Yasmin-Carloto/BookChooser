@@ -1,15 +1,3 @@
-/* Informação sobre a utilização do web app */
-
-/* Carrossel de livros */
-.picker-feature-explanation{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    background-color: var(--off-white);
-    height: 100vh;
-    position: relative;
-}
-
 .book-container{
     display: flex;
     justify-content: center;
