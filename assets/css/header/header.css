@@ -109,13 +109,14 @@ ul{
         justify-content: space-between;
         position: absolute;
         left: 0;
-        top: 48px;
+        top: 16vw;
         background-color: var(--off-white);
         border-radius: 2vw;
         padding: 4vw;
         margin: 0 2vw;
         gap: 2vw;
         display: none;
+        border: 0.03px solid var( --light-gray);
     }
 
     .nav-item{
