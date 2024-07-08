@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", (e) => {4
 
     hamburguerMenu.addEventListener("change", (e) => {
         e.preventDefault()
-
         hamburguerMenu.checked ? navContainer.style.display = "flex" : navContainer.style.display = "none"
-        
     })
 })
