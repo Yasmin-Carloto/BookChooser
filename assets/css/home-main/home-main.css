@@ -1,0 +1,39 @@
+.picker-feature-explanation{
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    background-color: var(--off-white);
+}
+
+.feature-explanation{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.feature-explanation h2{
+    font-size: 36px;
+    font-weight: var(--font-bold);
+    text-transform: capitalize;
+}
+
+.feature-explanation h2 span{
+    font-weight: var(--font-bolder);
+    margin: 0 0.5vw;
+}
+
+.feature-explanation p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media screen and (max-width: 850px){
+
+    .picker-feature-explanation{
+        flex-direction: column;
+    }
+    
+    .feature-explanation{
+        margin: 0 5vw;
+    }
+}
