@@ -8,14 +8,14 @@
     --gray: #4f4f4f;
     --light-gray: #b1b1b1;
     --dark-gray: #232323;
-    --card-gray: #cbcbcb;
+    --card-gray: #bdbdbd;
     --off-white: #efefef;
     --sun-yellow: #f9ee58;
     --moon-gray: #8c8c8c;
     --font-light: 200;
     --normal-font: 400;
     --font-bold: 600;
-    --font-bolder: 900;
+    --font-bolder: 800;
 }
 
 html, body {
