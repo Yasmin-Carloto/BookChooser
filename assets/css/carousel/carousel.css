@@ -20,6 +20,7 @@ input{
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .cards label{
