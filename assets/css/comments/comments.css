@@ -1,0 +1,33 @@
+.comments-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    margin: 2vw;
+}
+
+.comment{
+    background-color: var(--card-gray);
+    padding: 1vw;
+    border-radius: 0 2vw 2vw 2vw;
+    transition: all .7s;
+}
+
+.comment:hover{
+    transform: scale(1.08);
+}
+
+.comment h3{
+    font-size: 16px;
+    font-weight: var(--font-bold);
+}
+
+.comment p{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 850px){
+    .comments-container{
+        width: 100%;
+    }
+}
