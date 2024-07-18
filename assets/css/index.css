@@ -4,6 +4,7 @@
 @import url(./carousel/carousel.css);
 @import url(./home-main/home-main.css);
 @import url(./comments/comments.css);
+@import url(./footer/footer.css);
 
 :root{
     --gray: #4f4f4f;
@@ -26,4 +27,8 @@ html, body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
