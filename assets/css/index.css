@@ -5,6 +5,7 @@
 @import url(./home-main/home-main.css);
 @import url(./comments/comments.css);
 @import url(./footer/footer.css);
+@import url(./book-chooser/book-chooser.css);
 
 :root{
     --gray: #4f4f4f;
