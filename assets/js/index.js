@@ -1,5 +1,6 @@
 import Book from "./Models/Book.js"
 import DateExpiration from "./Models/DateExpiration.js"
+import Comment from "./Models/Comment.js"
 
 document.addEventListener("DOMContentLoaded", (e) => {
     e.preventDefault()
@@ -18,6 +19,37 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     if(bookInfoContainer){
         displayCurrentBook(bookInfoContainer, currentBook)
+    }
+
+    const commentContainer = document.getElementById("monthly-comments-container")
+    const emoji = document.getElementById("emoji-picker-input")
+    const commentDescription = document.getElementById("comment-input")
+    const buttonOfSaving = document.getElementById("save-comment")
+    const dateBeginMonth = document.getElementById("current-month")
+    const statusOfSaving = document.getElementById("message-of-failure")
+    let allComments = Comment.getCommentsFromLocalStorage()
+    const currentDate = DateExpiration.getFormattedDate()
+
+    if(buttonOfSaving){
+        buttonOfSaving.addEventListener("click", () => {
+            if(commentDescription.value.length > 0){
+                console.log(commentDescription.value.lenght > 0);
+                Comment.saveCommentsInLocalStorage(emoji.value, commentDescription.value)
+                window.location.reload(true)
+            }else{
+                console.log(commentDescription.value.length > 0);
+                statusOfSaving.innerText = "Must have a comment."
+                statusOfSaving.style.color = "red"
+            }
+        })
+    }
+
+    if(commentContainer){
+        dateBeginMonth.innerText = currentDate
+
+        allComments.forEach(comment => {
+            displayComments(commentContainer, comment)  
+        })
     }
 })
 
@@ -46,4 +78,37 @@ function displayCurrentBook(bookInfoContainer, bookInfo){
 
     bookInfoContainer.appendChild(bookCover)
     bookInfoContainer.appendChild(bookTextInfomation)
+}
+
+function displayComments(allCommentsContainer, commentToDisplay){
+    const commentContainer = document.createElement("div")
+    commentContainer.className = "comment"
+
+    const commentInformation = document.createElement("div")
+    commentInformation.className = "comments-info"
+
+    const emoji = document.createElement("h3")
+    emoji.id = "comment-emoji"
+    emoji.innerHTML = commentToDisplay.emoji
+
+    const date = document.createElement("h3")
+    date.id = "comment-date"
+    date.innerText = commentToDisplay.date
+
+    const time = document.createElement("h3")
+    time.id = "comment-time"
+    time.innerText = commentToDisplay.time
+
+    const comment = document.createElement("p")
+    comment.id = "comment-description"
+    comment.innerText = commentToDisplay.comment
+
+    commentInformation.appendChild(emoji)
+    commentInformation.appendChild(date)
+    commentInformation.appendChild(time)
+
+    commentContainer.appendChild(commentInformation)
+    commentContainer.appendChild(comment)
+
+    allCommentsContainer.appendChild(commentContainer)
 }
