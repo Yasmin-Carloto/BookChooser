@@ -15,7 +15,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
     let bookInfoContainer = document.getElementById("book-info-container")
     DateExpiration.saveNewDateToLocalStorage()
     const currentBook = Book.getBookFromLocalStorage()
-    displayCurrentBook(bookInfoContainer, currentBook)
+
+    if(bookInfoContainer){
+        displayCurrentBook(bookInfoContainer, currentBook)
+    }
 })
 
 function displayCurrentBook(bookInfoContainer, bookInfo){
