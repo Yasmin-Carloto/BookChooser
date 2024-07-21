@@ -1,9 +1,9 @@
 footer{
-    background-color: var(--off-white);
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1.5vw;
+    border-top: 0.03px solid var( --light-gray);
 }
 
 .social-media{
