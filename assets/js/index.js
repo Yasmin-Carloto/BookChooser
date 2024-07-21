@@ -1,4 +1,5 @@
 import Book from "./Models/Book.js"
+import DateExpiration from "./Models/DateExpiration.js"
 
 document.addEventListener("DOMContentLoaded", (e) => {
     e.preventDefault()
@@ -12,7 +13,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     })
 
     let bookInfoContainer = document.getElementById("book-info-container")
-    let currentBook = Book.getBookFromLocalStorage()
+    DateExpiration.saveNewDateToLocalStorage()
+    const currentBook = Book.getBookFromLocalStorage()
     displayCurrentBook(bookInfoContainer, currentBook)
 })
 
