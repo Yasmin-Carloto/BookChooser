@@ -6,6 +6,7 @@
 @import url(./comments/comments.css);
 @import url(./footer/footer.css);
 @import url(./book-chooser/book-chooser.css);
+@import url(./comment-book/comment-book.css);
 
 :root{
     --gray: #4f4f4f;
@@ -13,6 +14,7 @@
     --dark-gray: #232323;
     --card-gray: #bdbdbd;
     --off-white: #efefef;
+    --input-white: #cdcdcd;
     --sun-yellow: #f9ee58;
     --moon-gray: #8c8c8c;
     --font-light: 200;
