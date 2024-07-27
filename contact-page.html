@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookChooser</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
 
 </head>
 <body>
@@ -48,14 +48,28 @@
         </nav>
     </header>
 
-    <main class="book-chooser-main">
-        <h2 class="page-title">
-            Book of the month
-        </h2>
-        
-        <div class="book-info-container" id="book-info-container">
-            
-        </div>
+    <main class="form-container-main">
+        <h2>Send me your message</h2>
+
+        <form class="form-contact-container" action="https://formsubmit.co/carlotoyasmin11@gmail.com" method="POST">
+            <div class="form-field-container">
+                <label for="name-contact">Type your name</label>
+                <input type="text"  name="name" id="name-contact" class="form-input" required>
+            </div>
+
+            <div class="form-field-container">
+                <label for="email-contact">Type your email</label>
+                <input type="text" name="email" id="email-contact" class="form-input" required>
+            </div>
+
+            <div class="form-field-container">
+                <label for="message-contact">Type your message</label>
+                <textarea name="message" id="message-contact" class="form-input message-input" required></textarea>
+            </div>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/assets/pages/thank-you-page.html">
+            <input class="default-button" id="send-email" type="submit" value="Send Email">
+        </form>
     </main>
 
     <footer>
