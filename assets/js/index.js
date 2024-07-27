@@ -1,6 +1,7 @@
 import Book from "./Models/Book.js"
 import DateExpiration from "./Models/DateExpiration.js"
 import Comment from "./Models/Comment.js"
+import { darkTheme, getThemeFromLocalStorage, lightTheme, setThemeToLocalStorage } from "./DarkTheme/change-theme.js"
 
 document.addEventListener("DOMContentLoaded", (e) => {
     e.preventDefault()
@@ -51,7 +52,32 @@ document.addEventListener("DOMContentLoaded", (e) => {
             displayComments(commentContainer, comment)  
         })
     }
+
+    let currentTheme = getThemeFromLocalStorage()
+    const header = document.getElementById("header")
+    const logos = document.getElementsByClassName("logo")
+    const links = document.getElementsByClassName("nav-link")
+    const buttons = document.getElementsByClassName("default-button")
+    const icons = document.getElementsByClassName("icon")
+    const switcherTheme = document.getElementById("checkbox")
+
+    switcherTheme.checked = currentTheme === "dark";
+    applyTheme(currentTheme, header, logos, links, navContainer, buttons, icons);
+
+    switcherTheme.addEventListener("click", (e) => {
+        currentTheme = currentTheme === "light" ? "dark" : "light"
+        setThemeToLocalStorage(currentTheme)
+        applyTheme(currentTheme, header, logos, links, navContainer, buttons, icons)
+    })
 })
+
+function applyTheme(theme, header, logos, navigationLinks, navigationLinksContainer, defaultButtons, icons){
+    if (theme === "dark") {
+        darkTheme(header, logos, navigationLinks, navigationLinksContainer, defaultButtons, icons)
+    } else {
+        lightTheme(header, logos, navigationLinks, navigationLinksContainer, defaultButtons, icons)    
+    }
+}
 
 function displayCurrentBook(bookInfoContainer, bookInfo){
     const bookCover = document.createElement("img")
