@@ -10,7 +10,6 @@ O BookChooser está hospedado no Github Pages neste link: [https://yasmin-carlot
 * HTML 
 * CSS
 * Javascript
-* AJAX
 * FormSubmit
 
 ## Rodar o projeto em sua máquina
