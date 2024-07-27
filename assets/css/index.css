@@ -7,6 +7,8 @@
 @import url(./footer/footer.css);
 @import url(./book-chooser/book-chooser.css);
 @import url(./comment-book/comment-book.css);
+@import url(./form-contact/form-contact.css);
+@import url(./thanks-message/thanks-message.css);
 
 :root{
     --gray: #4f4f4f;
