@@ -1,0 +1,62 @@
+.form-container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin: 2vw;
+}
+
+.form-contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+
+    width: 50%;
+}
+
+.form-field-container{
+    width: 100%;
+}
+
+.form-field-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.message-input{
+    height: 6vw;
+    resize: none;
+}
+
+@media  screen and (max-width: 850px){
+    .form-container-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+        margin: 0;
+    }
+
+    .form-contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    
+        width: 80%;
+    }
+
+    .form-field-container{
+        width: 100%;
+    }
+
+    .form-field-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .message-input{
+        height: 20vw;
+    }
+}
