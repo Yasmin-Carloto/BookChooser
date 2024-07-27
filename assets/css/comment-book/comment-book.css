@@ -49,18 +49,6 @@
     align-items: center;
 }
 
-.default-button{
-    border-radius: 1vw;
-    padding: 1vw;
-    color: var(--off-white);
-    background-color: var(--gray);
-    cursor: pointer;
-}
-
-.default-button:hover{
-    background-color: var(--dark-gray);
-}
-
 @media  screen and (max-width: 850px){
     .comment-form-container{
         display: flex;

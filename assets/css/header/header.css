@@ -6,14 +6,7 @@ header{
     display: none;
 }
 
-.logo{
-    text-decoration: none;
-    color: var(--dark-gray);
-    text-transform: capitalize;
-}
-
 nav{
-    background-color: var(--off-white);
     display: flex;
     align-items: center;
     padding: 4vw;

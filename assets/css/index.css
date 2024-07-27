@@ -25,6 +25,24 @@
     --font-bolder: 800;
 }
 
+.logo{
+    text-decoration: none;
+    color: var(--dark-gray);
+    text-transform: capitalize;
+}
+
+.default-button{
+    border-radius: 1vw;
+    padding: 1vw;
+    color: var(--off-white);
+    background-color: var(--gray);
+    cursor: pointer;
+}
+
+.default-button:hover{
+    background-color: var(--dark-gray);
+}
+
 html, body {
     height: 100%;
     margin: 0;
