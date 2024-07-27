@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url(./header/header.css);
+@import url(./carousel/carousel.css);
+@import url(./home-main/home-main.css);
+@import url(./comments/comments.css);
+@import url(./footer/footer.css);
+@import url(./book-chooser/book-chooser.css);
+@import url(./comment-book/comment-book.css);
+@import url(./form-contact/form-contact.css);
+@import url(./thanks-message/thanks-message.css);
+
+:root{
+    --gray: #4f4f4f;
+    --light-gray: #b1b1b1;
+    --dark-gray: #232323;
+    --card-gray: #bdbdbd;
+    --off-white: #efefef;
+    --input-white: #cdcdcd;
+    --sun-yellow: #f9ee58;
+    --moon-gray: #8c8c8c;
+    --font-light: 200;
+    --normal-font: 400;
+    --font-bold: 600;
+    --font-bolder: 800;
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--dark-gray);
+    text-transform: capitalize;
+}
+
+.default-button{
+    border-radius: 1vw;
+    padding: 1vw;
+    color: var(--off-white);
+    background-color: var(--gray);
+    cursor: pointer;
+}
+
+.default-button:hover{
+    background-color: var(--dark-gray);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--off-white);
+}

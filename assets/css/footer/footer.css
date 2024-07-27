@@ -1,0 +1,32 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5vw;
+    border-top: 0.03px solid var( --light-gray);
+}
+
+.social-media{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media a .icon{
+    color: var(--dark-gray);
+}
+
+@media screen and (max-width: 850px){
+    footer{
+        flex-direction: column;
+        gap: 2vw;
+        padding: 4vw;
+    }
+}

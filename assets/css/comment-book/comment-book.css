@@ -1,0 +1,105 @@
+.comment-book-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-form-container{
+    margin: 2vw;
+}
+
+.comment-form{
+    display: flex;
+}
+
+.input-container{
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.comment-input{
+    height: 6vw;
+    width: 20vw;
+    resize: none;
+}
+
+.form-input{
+    background-color: var(--input-white);
+    border-radius: 1vw;
+    padding: 1vw;
+    border: none;
+    border: 0.5px var(--gray) solid;
+}
+
+.comments-section{
+    margin: 4vw;
+}
+
+.monthly-comments-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.comments-info{
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+}
+
+@media  screen and (max-width: 850px){
+    .comment-form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .monthly-comments-container{
+        gap: 8vw;
+    }
+
+    .comment-section-title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .comment-form{
+        flex-direction: column;
+    }
+
+    .input-container{
+        gap: 4vw;
+        margin: 6vw;
+    }
+
+    .emoji-picker-input{
+        width: 18vw;
+    }
+    
+    .comment-input{
+        height: 30vw;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .form-input{
+        border-radius: 2vw;
+        padding: 1vw;
+    }
+
+    .comments-section{
+        margin: 8vw;
+    }
+
+    .comments-info{
+        gap: 2vw;
+    }
+
+    .default-button{
+        border-radius: 2vw;
+        padding: 2vw;
+    }
+}
