@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.input-caroulsel-radio{
+.input-carousel-radio{
     display: none;
 }
 
@@ -79,43 +79,43 @@
     text-transform: capitalize;
 }
 
-#slider-one:checked ~ .cards #laber-slider-four,
-#slider-two:checked ~ .cards #laber-slider-five,
-#slider-three:checked ~ .cards #laber-slider-one,
-#slider-four:checked ~ .cards #laber-slider-two,
-#slider-five:checked ~ .cards #laber-slider-three{
+#slider-one:checked ~ .cards #label-slider-four,
+#slider-two:checked ~ .cards #label-slider-five,
+#slider-three:checked ~ .cards #label-slider-one,
+#slider-four:checked ~ .cards #label-slider-two,
+#slider-five:checked ~ .cards #label-slider-three{
     transform: translate3d(-70%, 0, -220px); 
 }
 
-#slider-one:checked ~ .cards #laber-slider-five,
-#slider-two:checked ~ .cards #laber-slider-one,
-#slider-three:checked ~ .cards #laber-slider-two,
-#slider-four:checked ~ .cards #laber-slider-three,
-#slider-five:checked ~ .cards #laber-slider-four{
+#slider-one:checked ~ .cards #label-slider-five,
+#slider-two:checked ~ .cards #label-slider-one,
+#slider-three:checked ~ .cards #label-slider-two,
+#slider-four:checked ~ .cards #label-slider-three,
+#slider-five:checked ~ .cards #label-slider-four{
     transform: translate3d(-35%, 0, -120px);
 }
 
-#slider-one:checked ~ .cards #laber-slider-one,
-#slider-two:checked ~ .cards #laber-slider-two,
-#slider-three:checked ~ .cards #laber-slider-three,
-#slider-four:checked ~ .cards #laber-slider-four,
-#slider-five:checked ~ .cards #laber-slider-five{
+#slider-one:checked ~ .cards #label-slider-one,
+#slider-two:checked ~ .cards #label-slider-two,
+#slider-three:checked ~ .cards #label-slider-three,
+#slider-four:checked ~ .cards #label-slider-four,
+#slider-five:checked ~ .cards #label-slider-five{
     transform: translate3d(0, 0, 0); 
 }
 
-#slider-one:checked ~ .cards #laber-slider-two,
-#slider-two:checked ~ .cards #laber-slider-three,
-#slider-three:checked ~ .cards #laber-slider-four,
-#slider-four:checked ~ .cards #laber-slider-five,
-#slider-five:checked ~ .cards #laber-slider-one{
+#slider-one:checked ~ .cards #label-slider-two,
+#slider-two:checked ~ .cards #label-slider-three,
+#slider-three:checked ~ .cards #label-slider-four,
+#slider-four:checked ~ .cards #label-slider-five,
+#slider-five:checked ~ .cards #label-slider-one{
     transform: translate3d(35%, 0, -120px); 
 }
 
-#slider-one:checked ~ .cards #laber-slider-three,
-#slider-two:checked ~ .cards #laber-slider-four,
-#slider-three:checked ~ .cards #laber-slider-five,
-#slider-four:checked ~ .cards #laber-slider-one,
-#slider-five:checked ~ .cards #laber-slider-two{
+#slider-one:checked ~ .cards #label-slider-three,
+#slider-two:checked ~ .cards #label-slider-four,
+#slider-three:checked ~ .cards #label-slider-five,
+#slider-four:checked ~ .cards #label-slider-one,
+#slider-five:checked ~ .cards #label-slider-two{
     transform: translate3d(70%, 0, -220px); 
 }
 
@@ -168,35 +168,35 @@
         display: none;
     }
 
-    #slider-one:checked ~ .cards #laber-slider-four,
-    #slider-two:checked ~ .cards #laber-slider-five,
-    #slider-three:checked ~ .cards #laber-slider-one,
-    #slider-four:checked ~ .cards #laber-slider-two,
-    #slider-five:checked ~ .cards #laber-slider-three{
+    #slider-one:checked ~ .cards #label-slider-four,
+    #slider-two:checked ~ .cards #label-slider-five,
+    #slider-three:checked ~ .cards #label-slider-one,
+    #slider-four:checked ~ .cards #label-slider-two,
+    #slider-five:checked ~ .cards #label-slider-three{
         transform: translate3d(-50%, 0, -150px);
     }
 
-    #slider-one:checked ~ .cards #laber-slider-five,
-    #slider-two:checked ~ .cards #laber-slider-one,
-    #slider-three:checked ~ .cards #laber-slider-two,
-    #slider-four:checked ~ .cards #laber-slider-three,
-    #slider-five:checked ~ .cards #laber-slider-four{
+    #slider-one:checked ~ .cards #label-slider-five,
+    #slider-two:checked ~ .cards #label-slider-one,
+    #slider-three:checked ~ .cards #label-slider-two,
+    #slider-four:checked ~ .cards #label-slider-three,
+    #slider-five:checked ~ .cards #label-slider-four{
         transform: translate3d(-25%, 0, -80px);
     }
 
-    #slider-one:checked ~ .cards #laber-slider-two,
-    #slider-two:checked ~ .cards #laber-slider-three,
-    #slider-three:checked ~ .cards #laber-slider-four,
-    #slider-four:checked ~ .cards #laber-slider-five,
-    #slider-five:checked ~ .cards #laber-slider-one{
+    #slider-one:checked ~ .cards #label-slider-two,
+    #slider-two:checked ~ .cards #label-slider-three,
+    #slider-three:checked ~ .cards #label-slider-four,
+    #slider-four:checked ~ .cards #label-slider-five,
+    #slider-five:checked ~ .cards #label-slider-one{
         transform: translate3d(25%, 0, -80px);
     }
 
-    #slider-one:checked ~ .cards #laber-slider-three,
-    #slider-two:checked ~ .cards #laber-slider-four,
-    #slider-three:checked ~ .cards #laber-slider-five,
-    #slider-four:checked ~ .cards #laber-slider-one,
-    #slider-five:checked ~ .cards #laber-slider-two{
+    #slider-one:checked ~ .cards #label-slider-three,
+    #slider-two:checked ~ .cards #label-slider-four,
+    #slider-three:checked ~ .cards #label-slider-five,
+    #slider-four:checked ~ .cards #label-slider-one,
+    #slider-five:checked ~ .cards #label-slider-two{
         transform: translate3d(50%, 0, -150px);
     }
 }
