@@ -3,7 +3,7 @@
 Esse projeto foi desenvolvido para a conclusão do módulo 3 da Trilha FullStack Jr. da +PraTi.
 O BookChooser tem por objetivo escolher aleatoriamente, mensalmente, um novo livro para o usuário ler. Além disso, é possível fazer comentários sobre o livro ao longo da leitura, aonde é registrado a hora, a data o humor e o comentário do usuário.
 
-## Acessar o Projeto de Navegação com Abas
+## Acessar o BookChooser
 O BookChooser está hospedado no Github Pages neste link: [https://yasmin-carloto.github.io/BookChooser/](https://yasmin-carloto.github.io/BookChooser/)
 
 ## Tecnologias usadas no projeto
