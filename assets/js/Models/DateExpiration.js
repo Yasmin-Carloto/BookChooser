@@ -27,7 +27,7 @@ class DateExpiration{
         const month = lastSavedDate.getMonth()
         const year =  lastSavedDate.getFullYear()
 
-        const fullDate = `${month}/${day}/${year}`
+        const fullDate = `${month + 1}/${day}/${year}`
         return fullDate
     }
 
